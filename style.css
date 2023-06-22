@@ -33,6 +33,7 @@ body {
     background-size: cover;
     */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -87,6 +88,8 @@ body * {
     z-index: 1;
     left: 0;
     transform: translateY(-50%);
+
+    animation: slide-out 0.2s ;
 }
 
 #switch span {
@@ -99,8 +102,7 @@ body * {
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
 }
 
 
@@ -177,4 +179,24 @@ footer {
         --bg-url: url(./assets/BG-desktop-light.jpg)
     }
 
+}
+
+@keyframes slide-in {
+    from   {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
+    
 }
