@@ -12,6 +12,7 @@
     --surface-color-hover: rgba(255, 255, 255, 0.02);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --switch-bg-url: url(./assets/moon-stars.svg);
+    --align-ss: red;
     
 }
 
